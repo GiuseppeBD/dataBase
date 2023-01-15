@@ -5,22 +5,16 @@ import { DettagliUsersComponent } from './features/dettagli-users/dettagli-users
 import { UsersComponent } from './features/users/users.component';
 
 const routes: Routes = [
-{path:'home', component: HomeComponent},
-{path:'', redirectTo: "home"},
-{path:'/', redirectTo: "home"},
-{path:'dettagliUser', component: DettagliUsersComponent},
-{path:'user', component: UsersComponent},
+  { path: 'home', component: HomeComponent },
 
+  { path: 'dettagliUser', component: DettagliUsersComponent },
+  { path: 'user', component: UsersComponent },
 
-
-
-
-{path:'**', redirectTo: "home"}
-
+  { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
