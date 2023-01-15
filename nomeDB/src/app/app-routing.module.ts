@@ -5,17 +5,16 @@ import { DettagliUsersComponent } from './features/dettagli-users/dettagli-users
 import { UsersComponent } from './features/users/users.component';
 
 const routes: Routes = [
+
 {path:'home', component: HomeComponent},
-{path:'', redirectTo: "home"},
-{path:'/', redirectTo: "home"},
 {path:'dettagliUser', component: DettagliUsersComponent},
 {path:'user', component: UsersComponent},
 
 
 
 
-
-{path:'**', redirectTo: "home"}
+{path:'', component: HomeComponent},
+{path:'**', component: HomeComponent}
 
 ];
 
