@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DettagliUsersComponent } from './features/dettagli-users/dettagli-users.component';
+import { UsersComponent } from './features/users/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DettagliUsersComponent
+    UsersComponent
   ],
   imports: [
     BrowserModule,
