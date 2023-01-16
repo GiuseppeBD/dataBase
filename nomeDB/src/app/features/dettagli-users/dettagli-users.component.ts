@@ -1,7 +1,6 @@
 
-import { DettagliUserService } from './dettagli-user.service';
-import { Component } from '@angular/core';
-import { DettagliUser } from 'src/app/core/model/user.model';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-dettagli-users',
@@ -10,20 +9,8 @@ import { DettagliUser } from 'src/app/core/model/user.model';
 })
 export class DettagliUsersComponent {
 
-  dettaglioUser: DettagliUser = {
-    address:{},
-    company:{}
-  } as DettagliUser;
-vis=false
-  constructor(private dettUtente: DettagliUserService) {}
+@Input() dettaglioUser:any;
+@Output() Esc= new EventEmitter()
 
-  ngOnInit() {}
 
-  onSubmitForm(f: any) {
-    this.dettUtente.loadDettagli(f.numeroid).subscribe((data) => {
-      this.dettaglioUser=data
-      console.log(this.dettaglioUser);
-    });
-    this.vis=true
-  }
 }

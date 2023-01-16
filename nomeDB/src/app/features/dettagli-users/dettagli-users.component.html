@@ -1,11 +1,4 @@
-<p>dettagli-users works!</p>
-<form #f="ngForm" (submit)="onSubmitForm(f.value)" >
-<input type="number" min="1" max="8" ngModel name="numeroid">
-<button>VIA</button>
-</form>
-
-<div *ngIf="vis">
-
+<button (click)="Esc.emit()">Esc</button>
   phone:{{dettaglioUser.phone}}
   <br>
   address:
@@ -25,5 +18,4 @@
   <br>
   website:{{dettaglioUser.website}}
 
-</div>
 

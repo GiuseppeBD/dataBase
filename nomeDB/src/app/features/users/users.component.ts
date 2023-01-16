@@ -9,18 +9,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users.component.css'],
 })
 export class UsersComponent implements OnInit {
+  users: User[] = [];
+  userDettagli: User = {} as User;
+
   constructor(private serviceUser: UsersService) {}
 
   ngOnInit(): void {
-    this.loadUsers()
+    this.loadUsers();
   }
 
-  users: User[] = [];
+  loadUsers() {
 
-  loadUsers(){
-    this.serviceUser.getUsers().subscribe((data)=>{
+    this.serviceUser.getUsers().subscribe((data) => {
       this.users = data;
-      console.log(this.users);
-    })
+    });
+  }
+
+  Dettagli(us: any) {
+    console.log(us)
+
+    this.userDettagli = us;
+  }
+
+
+  chiudi(a:any){
+    this.userDettagli = {} as User
   }
 }

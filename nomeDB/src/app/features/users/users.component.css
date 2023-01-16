@@ -1,0 +1,12 @@
+.example-card {
+  width: 400px;
+  border: solid 0.3px black;
+
+}
+
+.boxUser{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+}

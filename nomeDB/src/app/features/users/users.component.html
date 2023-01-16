@@ -1,3 +1,26 @@
-<p>users works!</p>
+<h4>Lista User</h4>
+<div class="boxUser">
 
-<app-dettagli-users></app-dettagli-users>
+  <div *ngFor="let us of users">
+
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{us.username}}</mat-card-title>
+        <mat-card-subtitle>{{us.name}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{us.email}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+
+        <button mat-button (click)="Dettagli(us)" *ngIf="userDettagli.id!==us.id">Dettagli</button>
+            <div *ngIf="userDettagli.id==us.id">
+      <app-dettagli-users [dettaglioUser]="userDettagli" (Esc)="chiudi($event)"></app-dettagli-users>
+    </div>
+      </mat-card-actions>
+    </mat-card>
+
+
+  </div>
+</div>
