@@ -1,6 +1,7 @@
-import { User } from './../../core/model/user.model';
+
 import { DettagliUserService } from './dettagli-user.service';
 import { Component } from '@angular/core';
+import { DettagliUser } from 'src/app/core/model/user.model';
 
 @Component({
   selector: 'app-dettagli-users',
@@ -8,14 +9,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./dettagli-users.component.css'],
 })
 export class DettagliUsersComponent {
-  users: User[] = [];
 
+  dettaglioUser: DettagliUser = {
+    address:{},
+    company:{}
+  } as DettagliUser;
+vis=false
   constructor(private dettUtente: DettagliUserService) {}
 
-  ngOnInit() {
-    this.dettUtente.loadDettagli().subscribe((data) => {
-      this.users = data;
-      console.log(this.users)
+  ngOnInit() {}
+
+  onSubmitForm(f: any) {
+    this.dettUtente.loadDettagli(f.numeroid).subscribe((data) => {
+      this.dettaglioUser=data
+      console.log(this.dettaglioUser);
     });
+    this.vis=true
   }
 }

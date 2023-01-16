@@ -1,11 +1,11 @@
 
-interface Address{
+ interface Address{
   street: string;
   suite: string;
   city: string;
 }
 
-interface Company{
+ interface Company{
   name: string;
   catchPhrase: string;
   bs: string;
@@ -17,6 +17,7 @@ export interface User{
   username: string;
   email: string;
   id: number;
+  dettagli?:DettagliUser
 }
 
 export interface DettagliUser {

@@ -1,1 +1,29 @@
 <p>dettagli-users works!</p>
+<form #f="ngForm" (submit)="onSubmitForm(f.value)" >
+<input type="number" min="1" max="8" ngModel name="numeroid">
+<button>VIA</button>
+</form>
+
+<div *ngIf="vis">
+
+  phone:{{dettaglioUser.phone}}
+  <br>
+  address:
+   <ul>
+    <li>street: {{dettaglioUser.address.street}}</li>
+    <li>suite: {{dettaglioUser.address.suite}}</li>
+    <li>city: {{dettaglioUser.address.city}}</li>
+  </ul>
+  <br>
+  company:
+    <ul>
+    <li>name: {{dettaglioUser.company.name}}</li>
+    <li>catchPhrase: {{dettaglioUser.company.catchPhrase}}</li>
+    <li>bs: {{dettaglioUser.company.bs}}</li>
+
+  </ul>
+  <br>
+  website:{{dettaglioUser.website}}
+
+</div>
+

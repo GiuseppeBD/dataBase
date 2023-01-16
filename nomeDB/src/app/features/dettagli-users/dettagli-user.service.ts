@@ -13,8 +13,8 @@ url ="http://localhost:3000/user"
   constructor(private http: HttpClient) { }
 
 
-loadDettagli():Observable<User[]>{
-return this.http.get<User[]>(this.url)
+loadDettagli(id:number):Observable<DettagliUser>{
+return this.http.get<DettagliUser>(`${this.url}/${id}`)
 }
 
 
