@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DettagliUsersComponent } from './features/dettagli-users/dettagli-users.component';
 import { UsersComponent } from './features/users/users.component';
+import { ProductsComponent } from './features/products/products.component';
+import { CartComponent } from './features/cart/cart.component';
 
 const routes: Routes = [
 {path:'', component: HomeComponent},
@@ -10,6 +12,8 @@ const routes: Routes = [
 
 {path:'dettagliUser', component: DettagliUsersComponent},
 {path:'user', component: UsersComponent},
+{path:'products', component: ProductsComponent},
+{path:'cart', component: CartComponent},
 
 
 

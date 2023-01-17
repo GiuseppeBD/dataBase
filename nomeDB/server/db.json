@@ -184,5 +184,43 @@
         "bs": "e-enable extensible e-tailers"
       }
     }
+  ],
+  "products": [
+    {
+      "name": "maglione",
+      "quantity": 1,
+      "price": 30,
+      "id": 1
+    },
+    {
+      "name": "calze",
+      "quantity": 1,
+      "price": 2,
+      "id": 2
+    },
+    {
+      "name": "cappello visiera",
+      "quantity": 1,
+      "price": 5,
+      "id": 3
+    },
+    {
+      "name": "scarpe",
+      "quantity": 1,
+      "price": 80,
+      "id": 4
+    },
+    {
+      "name": "maglione",
+      "quantity": 1,
+      "price": 30,
+      "id": 5
+    },
+    {
+      "name": "felpa",
+      "quantity": 1,
+      "price": 50,
+      "id": 6
+    }
   ]
 }

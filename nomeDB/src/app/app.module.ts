@@ -17,6 +17,12 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { CartComponent } from './features/cart/cart.component';
+import { ProductsComponent } from './features/products/products.component';
+import {MatTableModule} from '@angular/material/table';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +30,8 @@ import { CartComponent } from './features/cart/cart.component';
     UsersComponent,
     HomeComponent,
     DettagliUsersComponent,
-    CartComponent
+    CartComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +43,8 @@ import { CartComponent } from './features/cart/cart.component';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
