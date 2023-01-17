@@ -16,13 +16,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import { CartComponent } from './features/cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     HomeComponent,
-    DettagliUsersComponent
+    DettagliUsersComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
