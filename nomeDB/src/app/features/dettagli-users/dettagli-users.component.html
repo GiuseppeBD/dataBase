@@ -1,21 +1,24 @@
-<button (click)="Esc.emit()">Esc</button>
-  phone:{{dettaglioUser.phone}}
-  <br>
-  address:
-   <ul>
-    <li>street: {{dettaglioUser.address.street}}</li>
-    <li>suite: {{dettaglioUser.address.suite}}</li>
-    <li>city: {{dettaglioUser.address.city}}</li>
-  </ul>
-  <br>
-  company:
-    <ul>
-    <li>name: {{dettaglioUser.company.name}}</li>
-    <li>catchPhrase: {{dettaglioUser.company.catchPhrase}}</li>
-    <li>bs: {{dettaglioUser.company.bs}}</li>
+<button mat-button (click)="Esc.emit()" >Esc</button>
+<mat-card-content>
+  <hr>
+  <p>phone: {{dettaglioUser.phone}}</p><br>
+  <hr>
+  <p>address:<br>
+    street: {{dettaglioUser.address.street}}<br>
+    suite: {{dettaglioUser.address.suite}}<br>
+    city: {{dettaglioUser.address.city}}</p><br>
+<hr>
+<p>company:<br>
+    name: {{dettaglioUser.company.name}}<br>
+    catchPhrase: {{dettaglioUser.company.catchPhrase}}<br>
+    bs: {{dettaglioUser.company.bs}}<br>
+</p>
+<hr>
+<p>website:{{dettaglioUser.website}}</p>
 
-  </ul>
-  <br>
-  website:{{dettaglioUser.website}}
+
+</mat-card-content>
+
+
 
 
