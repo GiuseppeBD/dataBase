@@ -1,3 +1,14 @@
 table {
   width: 100%;
 }
+
+.quantity {
+  display: flex;
+  gap: 0.1rem;
+  align-items: center;
+}
+
+
+.quantity a {
+  cursor: pointer;
+}

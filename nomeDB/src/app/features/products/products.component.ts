@@ -8,7 +8,7 @@ import { ProductsStore } from './products.store';
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'name', 'price', 'quantity'];
+  displayedColumns: string[] = ['position', 'name', 'price', 'quantity', 'add'];
 
   constructor(
     public prService: ProductsService,
@@ -27,9 +27,19 @@ export class ProductsComponent implements OnInit {
     elem.quantity += add;
     if (elem.quantity >= 0) {
       this.prService.addQuantity(elem);
-      return
-    }else{
-      elem.quantity=0
+      return;
+    } else {
+      elem.quantity = 0;
     }
   }
+
+  addOnCart(element: any) {
+    this.prStore.addOnCart(element);
+  }
+
+
+
+
+
+
 }

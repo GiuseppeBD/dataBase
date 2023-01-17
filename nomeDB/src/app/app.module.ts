@@ -19,7 +19,7 @@ import {MatCardModule} from '@angular/material/card';
 import { CartComponent } from './features/cart/cart.component';
 import { ProductsComponent } from './features/products/products.component';
 import {MatTableModule} from '@angular/material/table';
-
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 
@@ -44,7 +44,8 @@ import {MatTableModule} from '@angular/material/table';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

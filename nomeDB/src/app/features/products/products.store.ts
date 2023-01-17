@@ -5,15 +5,21 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ProductsStore {
-
   products: Product[] = [];
+  cartUser: Product[] = [];
 
-  loadProducts(data:Product[]) {
-    this.products=data
+  loadProducts(data: Product[]) {
+    this.products = data;
   }
 
-  addQuantity(item:Product){
-    this.products = this.products.map((r) => (r.id === item.id ? item : r));
+  addQuantity(item: Product) {
+    this.products = this.products.map((product) =>
+      product.id === item.id ? item : product
+    );
   }
 
+  addOnCart(item: Product) {
+    this.cartUser.push(item);
+    console.log(this.cartUser);
+  }
 }
