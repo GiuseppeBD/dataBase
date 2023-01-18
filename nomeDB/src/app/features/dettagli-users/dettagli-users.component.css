@@ -1,0 +1,30 @@
+.butt {
+  color: rgba(255, 0, 0, 0.616);
+  margin: .2rem;
+  display: block;
+  text-align: right;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.subtitle {
+  font-style: italic;
+  font-weight: 200;
+  margin: 0 2rem;
+}
+
+.box2 {
+  list-style: none;
+}
+
+li{
+  display: flex;
+margin-left: 1rem;
+  justify-content:start;
+  flex-wrap: wrap;
+}
+p{
+  margin-left: 3.5rem;
+}

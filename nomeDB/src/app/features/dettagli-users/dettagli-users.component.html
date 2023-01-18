@@ -1,24 +1,42 @@
-<button mat-button (click)="Esc.emit()" >Esc</button>
+<a class="butt" (click)="Esc.emit()">Esc</a>
 <mat-card-content>
-  <hr>
-  <p>phone: {{dettaglioUser.phone}}</p><br>
-  <hr>
-  <p>address:<br>
-    street: {{dettaglioUser.address.street}}<br>
-    suite: {{dettaglioUser.address.suite}}<br>
-    city: {{dettaglioUser.address.city}}</p><br>
-<hr>
-<p>company:<br>
-    name: {{dettaglioUser.company.name}}<br>
-    catchPhrase: {{dettaglioUser.company.catchPhrase}}<br>
-    bs: {{dettaglioUser.company.bs}}<br>
-</p>
-<hr>
-<p>website:{{dettaglioUser.website}}</p>
+  <div class="box">
+    <div class="title">phone: </div>
+    <p> {{dettaglioUser.phone}}</p>
+  </div>
+  <div class="box">
+    <div class="title">address: </div>
+    <ul class="box2">
+      <li>
+        <div class="subtitle">street:</div> {{dettaglioUser.address.street}}
+      </li>
+      <li>
+        <div class="subtitle">suite:</div>{{dettaglioUser.address.suite}}
+      </li>
+      <li>
+        <div class="subtitle">city:</div>{{dettaglioUser.address.city}}
+      </li>
+    </ul>
+  </div>
+  <div class="box">
+    <div class="title">company: </div>
+    <ul class="box2">
+      <li>
+        <div class="subtitle">name:</div>{{dettaglioUser.company.name}}
+      </li>
+      <li>
+        <div class="subtitle">catchPhrase:</div>{{dettaglioUser.company.catchPhrase}}
+      </li>
+      <li>
+        <div class="subtitle">bs:</div>{{dettaglioUser.company.bs}}
+      </li>
+    </ul>
 
+  </div>
+
+  <div class="box">
+    <div class="title">website: </div>
+    <p> {{dettaglioUser.website}}</p>
+  </div>
 
 </mat-card-content>
-
-
-
-

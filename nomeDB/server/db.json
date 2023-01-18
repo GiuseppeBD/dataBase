@@ -188,25 +188,25 @@
   "products": [
     {
       "name": "maglione",
-      "quantity": 3,
+      "quantity": 2,
       "price": 30,
       "id": 1
     },
     {
       "name": "calze",
-      "quantity": 3,
+      "quantity": 2,
       "price": 2,
       "id": 2
     },
     {
       "name": "cappello visiera",
-      "quantity": 2,
+      "quantity": 3,
       "price": 5,
       "id": 3
     },
     {
       "name": "scarpe",
-      "quantity": 1,
+      "quantity": 3,
       "price": 80,
       "id": 4
     },

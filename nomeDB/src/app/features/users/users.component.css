@@ -4,7 +4,7 @@
 
 }
 
-.boxUser{
+.boxUser {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -12,14 +12,30 @@
 }
 
 
-.visDett{
-position: absolute;
-z-index: 3;
-top: 25%;
-right: calc(50% - 144px);
+.visDett {
+  position: absolute;
+  z-index: 3;
+  top: 25%;
+  right: calc(50% - 144px);
 
 }
 
+.mat-mdc-card-header {
+  justify-content: center;
+}
 
+p {
+  text-align: right;
+  font-style: italic;
+  font-size: 10px;
+}
 
+.butt {
+  color: rgba(255, 0, 0, 0.616);
+  border: none;
+  background-color: inherit;
+  text-align: right;
+  display: block;
+  width: 100vw;
+}
 
