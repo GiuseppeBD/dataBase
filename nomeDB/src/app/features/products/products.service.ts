@@ -23,4 +23,5 @@ export class ProductsService {
       this.prStore.addQuantity(data);
     });
   }
+
 }

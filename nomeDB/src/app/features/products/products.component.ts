@@ -27,6 +27,7 @@ export class ProductsComponent implements OnInit {
     elem.quantity += add;
     if (elem.quantity >= 0) {
       this.prService.addQuantity(elem);
+
       return;
     } else {
       elem.quantity = 0;
@@ -34,12 +35,8 @@ export class ProductsComponent implements OnInit {
   }
 
   addOnCart(element: any) {
-    this.prStore.addOnCart(element);
+    if (element.quantity > 0) {
+      this.prStore.addOnCart(element);
+    }
   }
-
-
-
-
-
-
 }

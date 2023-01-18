@@ -2,18 +2,13 @@
   flex: 1 1 auto;
 }
 
-.mat-toolbar a{
+.mat-toolbar a {
   color: black;
   text-decoration: none;
   font-weight: 500;
 }
 
-
-.container{
-  padding: 2rem;
-}
-
-a{
+a {
   margin: .5rem;
 }
 
@@ -23,6 +18,14 @@ a{
   align-items: flex-start;
 }
 
-.demo-section + .demo-section {
+.demo-section+.demo-section {
   margin-top: 16px;
+}
+
+.mat-toolbar a:active {
+  background-color: rgba(165, 42, 42, 0.514);
+}
+
+.mat-toolbar a:focus {
+  background-color: rgba(255, 255, 255, 0.316);
 }

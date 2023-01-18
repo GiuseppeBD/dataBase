@@ -25,7 +25,4 @@ import { ProductsStore } from 'src/app/features/products/products.store';
 export class NavbarComponent {
   constructor(public prStore: ProductsStore) {}
   ngOnInit() {}
-
-
-
 }

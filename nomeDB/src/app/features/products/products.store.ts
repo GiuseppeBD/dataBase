@@ -7,6 +7,12 @@ import { Injectable } from '@angular/core';
 export class ProductsStore {
   products: Product[] = [];
   cartUser: Product[] = [];
+  totalShop: number = 0;
+
+  TotalCartShop(){
+    //(contenitore della somma, elemneto che viene ciclato)=>{ operazione, valore di partenza}
+    this.totalShop= this.cartUser.reduce((somma, elemento)=> somma+= elemento.price*elemento.quantity,0)
+  }
 
   loadProducts(data: Product[]) {
     this.products = data;
@@ -22,4 +28,13 @@ export class ProductsStore {
     this.cartUser.push(item);
     console.log(this.cartUser);
   }
+
+
+  buyCart(){
+    this.cartUser=[]
+    this.totalShop=0
+  }
+
+
+
 }
