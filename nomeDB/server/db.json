@@ -188,19 +188,19 @@
   "products": [
     {
       "name": "maglione",
-      "quantity": 3,
+      "quantity": 0,
       "price": 30,
       "id": 1
     },
     {
       "name": "calze",
-      "quantity": 1,
+      "quantity": 0,
       "price": 2,
       "id": 2
     },
     {
       "name": "cappello visiera",
-      "quantity": 2,
+      "quantity": 0,
       "price": 5,
       "id": 3
     },

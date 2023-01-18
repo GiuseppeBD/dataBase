@@ -1,16 +1,6 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button>
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
-  <a mat-flat-button routerLink="/home">Home</a>
-  <a mat-flat-button routerLink="/user">User</a>
-  <a mat-flat-button routerLink="/products">Shop</a>
-  <a mat-icon-button routerLink="/cart"><mat-icon matBadgeColor="warn" [matBadge]="prStore.cartUser.length">shopping_cart</mat-icon></a>
-</mat-toolbar>
 
 
+<app-navbar></app-navbar>
 <div class="container">
 
   <router-outlet></router-outlet>

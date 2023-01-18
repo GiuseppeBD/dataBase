@@ -20,6 +20,7 @@ import { CartComponent } from './features/cart/cart.component';
 import { ProductsComponent } from './features/products/products.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatBadgeModule} from '@angular/material/badge';
+import { NavbarComponent } from './core/navbar/navbar.component';
 
 
 
@@ -31,7 +32,8 @@ import {MatBadgeModule} from '@angular/material/badge';
     HomeComponent,
     DettagliUsersComponent,
     CartComponent,
-    ProductsComponent
+    ProductsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

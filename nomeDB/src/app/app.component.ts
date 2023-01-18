@@ -9,9 +9,6 @@ import { ProductsStore } from './features/products/products.store';
 export class AppComponent {
   title = 'nomeDB';
 
-  constructor(public prStore: ProductsStore) {}
-  ngOnInit(){
 
-    }
 
 }
