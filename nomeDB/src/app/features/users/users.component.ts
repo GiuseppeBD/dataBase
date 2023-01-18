@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class UsersComponent implements OnInit {
   users: User[] = [];
   userDettagli: User = {} as User;
-  opacita = false;
+
   constructor(private serviceUser: UsersService) {}
 
   ngOnInit(): void {
@@ -26,11 +26,12 @@ export class UsersComponent implements OnInit {
 
   Dettagli(us: any) {
     this.userDettagli = us;
-    this.opacita=true
+    this.serviceUser.opacita=true
+
   }
 
   chiudi(a: any) {
     this.userDettagli = {} as User;
-    this.opacita=false
+    this.serviceUser.opacita=false
   }
 }

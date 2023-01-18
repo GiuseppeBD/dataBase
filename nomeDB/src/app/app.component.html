@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-
+<div *ngIf="usService.opacita" [ngClass]="{'visDettOp': usService.opacita }"></div>
 <div class="container">
 
   <router-outlet></router-outlet>
