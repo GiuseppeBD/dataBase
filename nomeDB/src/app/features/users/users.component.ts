@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class UsersComponent implements OnInit {
   users: User[] = [];
   userDettagli: User = {} as User;
-
+  opacita = false;
   constructor(private serviceUser: UsersService) {}
 
   ngOnInit(): void {
@@ -19,20 +19,18 @@ export class UsersComponent implements OnInit {
   }
 
   loadUsers() {
-
     this.serviceUser.getUsers().subscribe((data) => {
       this.users = data;
     });
   }
 
   Dettagli(us: any) {
-    console.log(us)
-
     this.userDettagli = us;
+    this.opacita=true
   }
 
-
-  chiudi(a:any){
-    this.userDettagli = {} as User
+  chiudi(a: any) {
+    this.userDettagli = {} as User;
+    this.opacita=false
   }
 }

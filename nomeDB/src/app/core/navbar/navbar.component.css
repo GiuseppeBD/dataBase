@@ -8,6 +8,9 @@
   font-weight: 500;
 }
 
+.mat-toolbar{
+z-index: 100;
+}
 a {
   margin: .5rem;
 }
