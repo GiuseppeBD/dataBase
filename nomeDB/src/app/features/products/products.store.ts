@@ -29,13 +29,13 @@ export class ProductsStore {
 
   addOnCart(item: Product) {
     this.cartUser.push(item);
-    console.log(this.cartUser);
   }
 
 
   buyCart(){
     this.cartUser=[]
     this.totalShop=0
+    alert('transazione eseguita')
   }
 
 
